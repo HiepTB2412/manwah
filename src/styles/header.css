@@ -1,0 +1,181 @@
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 5;
+    box-shadow: 5px 1px 5px #888888;
+}
+
+.menu-row {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.language {
+    border-right: 1px solid rgba(229, 231, 235, 1);
+    padding: 0 10px 0 10px;
+}
+
+.menu-row a {
+    border-right: 1px solid rgba(229, 231, 235, 1);
+    padding: 0 10px 0 10px;
+    color: rgba(123, 121, 121, 1);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu-row a:hover {
+    color: #faa648;
+    text-decoration: underline;
+}
+
+.address {
+    color: rgba(123, 121, 121, 1);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.modal-address {
+    border-bottom: 1px solid rgba(229, 231, 235, 1);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.modal-address p {
+    margin-bottom: 10px;
+}
+
+.modal-address .ant-select-selector {
+    border: none !important;
+}
+
+.modal-language p {
+    margin-bottom: 10px;
+}
+
+.menu-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-nav img {
+    width: 150px;
+    cursor: pointer;
+}
+
+.menu-nav h2 {
+    color: rgba(35, 31, 32, 1);
+    padding: 16px 48px;
+}
+
+.menu-nav a {
+    text-decoration: none;
+}
+
+.menu-nav h2:hover {
+    color: rgba(248, 149, 32, 1);
+    text-decoration: underline;
+}
+
+
+/* Lớp phủ mờ */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    display: block;
+}
+
+/* Menu ẩn (ban đầu ẩn với chiều cao bằng 0) */
+.side-menu {
+    position: fixed;
+    right: 0;
+    top: -100%;
+    /* Menu sẽ bắt đầu ở phía trên màn hình */
+    width: 30%;
+    /* Chiều rộng bằng toàn bộ màn hình */
+    height: 100%;
+    /* Chiều cao 100% của màn hình */
+    background-color: #fff;
+    transition: top 0.5s ease;
+    /* Hiệu ứng chuyển động từ trên xuống */
+    z-index: 2;
+}
+
+/* Khi menu mở */
+.side-menu.open {
+    top: 0;
+    /* Menu sẽ di chuyển xuống */
+}
+
+/* Các liên kết trong menu */
+.side-menu ul {
+    list-style: none;
+}
+
+.side-menu ul li {
+    margin: 20px 0;
+}
+
+.side-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 13px;
+    display: block;
+    margin-left: 40px;
+    width: fit-content;
+}
+
+.side-menu ul li a:hover {
+    color: rgba(248, 149, 32, 1);
+    text-decoration: underline;
+}
+
+/* Khi click vào icon menu */
+.menu-nav div {
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.menu-detail:hover {
+    color: rgba(248, 149, 32, 1);
+    text-decoration: underline;
+}
+
+.side-menu-button {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.side-menu-button button {
+    width: 50%;
+    padding: 20px;
+    background-color: rgba(248, 149, 32, 1);
+    border: none;
+    border-right: 1px solid #fff;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: underline;
+    color: #551a8b;
+}
+
+.side-menu-button button:hover {
+    background-color: rgba(248, 149, 32, .9);
+}

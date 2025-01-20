@@ -2,7 +2,7 @@ import '../styles/footer.css'
 
 const Footer = () => {
     return (
-        <div className="page-footer">
+        <div className="page-footer" style={{ marginTop: "50px" }}>
             <div className="footer-content">
                 <div className="container">
                     <div>

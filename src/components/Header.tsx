@@ -54,7 +54,7 @@ const Header = () => {
 
                     <ul style={{ display: "flex" }}>
                         <Link to={"/sale"}><h2>Ưu đãi</h2></Link>
-                        <Link to={"/menu"}><h2>Thực đơn</h2></Link>
+                        <Link to={"/menu/mon-le"}><h2>Thực đơn</h2></Link>
                         <Link to={"/set-table"}><h2>Đặt bàn</h2></Link>
                     </ul>
 
